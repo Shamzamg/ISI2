@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\MangaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,6 +16,7 @@ use App\Http\Controllers\ArticleController;
 |
 */
 
+/*
 Route::get('/', [WelcomeController::class, 'index']);
 
 Route::get('article/{n}', [ArticleController::class, 'show'])->where('n', '[0-9]+');
@@ -29,4 +31,6 @@ Route::get('{n}', function ($n) {
 
 Route::get('/s', ['as' => 'home', function(){
     return "Je suis à la page d'accueil !";
-}]);
+}]);*/
+
+Route::get('mangas',[MangaController::class, 'index']);
