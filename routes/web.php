@@ -16,21 +16,4 @@ use App\Http\Controllers\MangaController;
 |
 */
 
-
-Route::get('/', [WelcomeController::class, 'index']);
-/*
-Route::get('article/{n}', [ArticleController::class, 'show'])->where('n', '[0-9]+');
-
-Route::get('/vue1', function() {
-    return view('vue1');
-});
-
-Route::get('{n}', function ($n) {
-    return "Je suis à la page ".$n." !";
-})->where('n', '[1-3]');
-
-Route::get('/s', ['as' => 'home', function(){
-    return "Je suis à la page d'accueil !";
-}]);*/
-
 Route::get('mangas',[MangaController::class, 'index']);

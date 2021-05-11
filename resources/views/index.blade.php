@@ -1,8 +1,10 @@
-@extends('layout')
+@extends('layouts.layout')
 
-@section('titrePage', 'Les Mangas')
+@section('titrePage', 'Liste des Mangas')
 
-@section('titreItem', 'Tous les mangas')
+@section('titreItem')
+    <h1>Tous les mangas: </h1>
+@endsection
 
 @section('contenu')
 <table class="table table-bordered table-striped">
