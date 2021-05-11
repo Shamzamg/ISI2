@@ -1,3 +1,10 @@
+@extends('layout')
+
+@section('titrePage', 'Les Mangas')
+
+@section('titreItem', 'Tous les mangas')
+
+@section('contenu')
 <table class="table table-bordered table-striped">
     <thead>
         <th>Id</th>
@@ -18,4 +25,4 @@
         </tr>
     @endforeach
 </table>
-
+@endsection

@@ -16,9 +16,9 @@ use App\Http\Controllers\MangaController;
 |
 */
 
-/*
-Route::get('/', [WelcomeController::class, 'index']);
 
+Route::get('/', [WelcomeController::class, 'index']);
+/*
 Route::get('article/{n}', [ArticleController::class, 'show'])->where('n', '[0-9]+');
 
 Route::get('/vue1', function() {
