@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Manga;
+use App\Models\Dessinateurs;
 use Illuminate\Http\Request;
 
-class MangaController extends Controller
+class DessinateursController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +15,9 @@ class MangaController extends Controller
     public function index()
     {
         //initialized from the Model
-        $manga = new Manga();
-        $mangas = $manga->getAll();
-        return view('mangas', compact('mangas'));
+        $dessinateurs = new Dessinateurs();
+        $dessinateurs = $dessinateurs->getAll();
+        return view('dessinateurs', compact('dessinateurs'));
     }
 
     /**
@@ -44,10 +44,10 @@ class MangaController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Manga  $manga
+     * @param  \App\Models\Dessinateurs  $dessinateurs
      * @return \Illuminate\Http\Response
      */
-    public function show(Manga $manga)
+    public function show(Dessinateurs $dessinateurs)
     {
         //
     }
@@ -55,10 +55,10 @@ class MangaController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Manga  $manga
+     * @param  \App\Models\Dessinateurs  $dessinateurs
      * @return \Illuminate\Http\Response
      */
-    public function edit(Manga $manga)
+    public function edit(Dessinateurs $dessinateurs)
     {
         //
     }
@@ -67,10 +67,10 @@ class MangaController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Manga  $manga
+     * @param  \App\Models\Dessinateurs  $dessinateurs
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Manga $manga)
+    public function update(Request $request, Dessinateurs $dessinateurs)
     {
         //
     }
@@ -78,10 +78,10 @@ class MangaController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Manga  $manga
+     * @param  \App\Models\Dessinateurs  $dessinateurs
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Manga $manga)
+    public function destroy(Dessinateurs $dessinateurs)
     {
         //
     }

@@ -11,7 +11,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">MangaWorld</a>
+                <a class="navbar-brand" href="/">MangaWorld</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -31,8 +31,9 @@
                         Voir ...
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">Les dessinateurs</a></li>
-                        <li><a class="dropdown-item" href="#">Les scénaristes</a></li>
+                        <li><a class="dropdown-item" href="/mangas">Les mangas</a></li>
+                        <li><a class="dropdown-item" href="/dessinateurs">Les dessinateurs</a></li>
+                        <li><a class="dropdown-item" href="/scenaristes">Les scenaristes</a></li>
                     </ul>
                     </li>
                 </ul>
@@ -48,7 +49,7 @@
         </header>
         @yield('contenu')
         <footer class="footer">
-            MangaWeb - copyright 3AInfo - 2021
+            MangaWeb - copyright 3A Info - 2021
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
     </body>
